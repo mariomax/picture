@@ -1,0 +1,108 @@
+/*
+File Name: palette.css
+Date: 6/14/18 - revised
+Programmer: Mario LoPriore
+*/
+body {
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+p,
+small,
+em {
+  font-family: 'Faustina', serif;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.header-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text h1 {
+  color: #000;
+  font-size: 3em;
+  font-weight: 700;
+  position: absolute;
+  text-shadow: 2px 3px #ffffff80;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "hero hero" "nav nav" "main side";
+}
+.hero {
+  grid-area: hero;
+}
+nav {
+  grid-area: nav;
+  background-color: #c44412;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+nav ul li {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+  padding: .5rem 0;
+}
+main h2 {
+  font-size: 1.7rem;
+  padding: 2rem;
+  text-align: center;
+}
+main p {
+  line-height: 1.2;
+  padding: 1rem 2rem;
+}
+main blockquote {
+  background-color: #f3f3f3;
+  border-left: 3px solid #c44412;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin: .5rem 2rem;
+  padding: 1rem 3rem;
+}
+aside {
+  grid-area: side;
+  background-color: #f2f2f280;
+}
+aside h2 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 500;
+  padding: 2rem;
+}
+aside p {
+  line-height: 1.6;
+  font-weight: 700;
+  padding: 1rem;
+}

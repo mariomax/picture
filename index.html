@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mario Lopriore" />
+    <meta name="description" content="Demo site using CSS Grid, Flex, and the HTML5 picture element." />
+
+    <!-- Facebook Open Graph markup. -->
+    <meta property="og:url" content="https://www.anchortagdesign.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anchor Tag Design" />
+    <meta property="og:description" content="Freelance web design, graphics and photography for artists, makers, and small businesses. Based in Portland, Oregon" />
+    <meta property="og:image" content="http://www.anchortagdesign.com/linkedin-og-image.jpg" />
+    <meta property="fb:app_id" content="966242223397117" />
+
+    <!-- Twitter Card markup. -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@mariojames211" />
+    <meta name="twitter:title" content="Portland Oregon Web Designer and Photographer" />
+    <meta name="twitter:description" content="Freelance web design, graphics, and photography for artists, makers and small businesses. Mobile first and custom WordPress sites plus logos, graphics, and digital photography." />
+    <meta name="twitter:image" content="http://www.anchortagdesign.com/linkedin-og-image.png" />
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,400i,700|Share:400,700" rel="stylesheet">
+    <title>HTML5 Picture Element</title>
+
+    <!-- Stylesheets in the css folder. -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Imported Google fonts. Headlines|body fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Faustina:400,600,600i" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="wrapper">
+    <div class="hero">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/hero-large.jpg, images/hero-large@2x.jpg 2x">
+            <source media="(min-width: 700px)" srcset="images/hero-med.jpg, images/hero-med@2x.jpg 2x">
+            <source media="(min-width: 500px)" srcset="images/hero-small.jpg, images/hero-small@2x.jpg 2x">
+            <img srcset="images/hero-square.jpg" alt="Interstate 84, Portland Oregon">
+        </picture>
+        <span class="header-text">    
+            <h1>Picture Demo Site</h1>
+        </span>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                Page 1
+            </li>
+            <li>
+                Page 2
+            </li>
+            <li>
+                Page 3
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Demo Site Subtitle</h2>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam quam nunc, luctus in imperdiet a, venenatis a metus. Sed hendrerit semper augue. Quisque quis feugiat tortor. Vivamus facilisis, odio pulvinar dignissim cursus, orci lacus posuere mi, et sodales purus magna sagittis sapien.</p>
+
+        <p>Aenean ac mollis mi. Nulla mi orci, ultricies sed massa et, mattis rhoncus felis. Mauris convallis pretium tristique. In eget volutpat urna, vitae suscipit sapien. Aliquam rhoncus, arcu vel gravida bibendum, turpis felis semper nibh, eu elementum sem erat in turpis. Fusce et auctor nisl, quis mattis nibh. Phasellus risus ante, porttitor in suscipit a, efficitur id nisi.
+
+        <blockquote>Fusce lobortis lacinia turpis, vitae facilisis quam. Nullam nec viverra dui. Cras felis est, tempor eget tortor ut, accumsan aliquet nisi. Vivamus pulvinar eros non nisi euismod, gravida vulputate neque posuere. Curabitur nec ornare lectus. Nunc dignissim, orci sit amet laoreet commodo, tellus est pretium ex, sed pulvinar quam sem vel sapien.</blockquote>
+        
+        <p>Cras nec tincidunt dui, quis vestibulum ligula. In aliquam tempus mi eu maximus. Suspendisse potenti. Mauris pellentesque purus erat, elementum ultricies neque tincidunt nec. Fusce sed metus nec elit lacinia pellentesque. Ut sit amet efficitur nisi. Donec luctus hendrerit elit, sed varius odio fermentum eget.</p>
+    </main>
+    <aside>
+        <h2>Aside Title</h2>
+        <p>Donec feugiat eros eu leo accumsan ultricies. Vivamus tempus magna at ligula pretium, a finibus ex aliquam. Quisque eget ipsum luctus lorem molestie posuere. Suspendisse erat massa, laoreet et ipsum in, consectetur porta ex. Proin malesuada quis lacus a commodo. Nullam porta mi sed blandit consectetur. Maecenas convallis at libero vitae ultricies. Maecenas non cursus nisi.</p>
+    </aside>
+    </div>
+</body>
+</html>
