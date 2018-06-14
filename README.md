@@ -1,1 +1,2 @@
-# The  HTML5 `<picture>` element - a demo.
+# Hero image demo
+### Utilizing the  HTML5 `<picture>` element.
