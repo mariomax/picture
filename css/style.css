@@ -47,14 +47,6 @@ img {
   position: absolute;
   text-shadow: 2px 3px #ffffff80;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: "hero hero" "nav nav" "main side";
-}
-.hero {
-  grid-area: hero;
-}
 nav {
   grid-area: nav;
   background-color: #c44412;
@@ -64,6 +56,7 @@ nav ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: .2rem;
 }
 nav ul li {
   color: #ffffff;
@@ -105,4 +98,15 @@ aside p {
   line-height: 1.6;
   font-weight: 700;
   padding: 1rem;
+}
+@media (min-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "nav nav" "main side";
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

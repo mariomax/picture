@@ -51,26 +51,17 @@ img {
     }
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-    "hero hero"
-    "nav nav"
-    "main side";
-}
-
-.hero { grid-area: hero; }
-
 nav { 
     grid-area: nav;
     background-color: @orange;
+
     ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-
+        padding: .2rem;
+        
         li {
             color: @white;
             font-size: 2rem;
@@ -123,5 +114,22 @@ aside {
         padding: 1rem;
     }
 
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+        "nav nav"
+        "main side";
+    }
+
+    nav {
+        ul {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
 }
 
