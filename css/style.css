@@ -6,29 +6,30 @@ Programmer: Mario LoPriore
 body {
   font-size: 16px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-p,
-small,
-em {
+body p,
+body small,
+body em {
   font-family: 'Faustina', serif;
 }
-.hero {
+body .hero {
   position: relative;
   width: 100%;
   margin: 0;
 }
-img {
+body .hero picture img {
+  display: block;
   width: 100%;
   height: auto;
 }
-.header-text {
+body .header-text {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -40,41 +41,41 @@ img {
   justify-content: center;
   align-items: center;
 }
-.header-text h1 {
+body .header-text h1 {
   color: #000;
   font-size: 3em;
   font-weight: 700;
   position: absolute;
   text-shadow: 2px 3px #ffffff80;
 }
-nav {
+body nav {
   grid-area: nav;
   background-color: #c44412;
 }
-nav ul {
+body nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: .2rem;
 }
-nav ul li {
+body nav ul li {
   color: #ffffff;
   font-size: 1.5rem;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 400;
   padding: .5rem 0;
 }
-main h2 {
+body main h2 {
   font-size: 1.7rem;
   padding: 2rem;
   text-align: center;
 }
-main p {
+body main p {
   line-height: 1.2;
   padding: 1rem 2rem;
 }
-main blockquote {
+body main blockquote {
   background-color: #f3f3f3;
   border-left: 3px solid #c44412;
   font-style: italic;
@@ -83,18 +84,18 @@ main blockquote {
   margin: .5rem 2rem;
   padding: 1rem 3rem;
 }
-aside {
+body aside {
   grid-area: side;
   background-color: #f2f2f280;
 }
-aside h2 {
+body aside h2 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.7rem;
   font-style: italic;
   font-weight: 500;
   padding: 2rem;
 }
-aside p {
+body aside p {
   line-height: 1.6;
   font-weight: 700;
   padding: 1rem;
